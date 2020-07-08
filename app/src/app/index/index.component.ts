@@ -19,7 +19,7 @@ export class IndexComponent implements OnInit {
       this.formgroups=this.fB.group({
         FirstName:['sushma',Validators.required],
         LastName:['Bharti',Validators.required],
-        email:['abc@gmail.com',[Validators.email,Validators.required]],
+        email:['abkjsdkjfssc@gmail.com',[Validators.email,Validators.required]],
         
       })
     }
