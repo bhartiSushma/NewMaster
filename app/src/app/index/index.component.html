@@ -1,0 +1,14 @@
+<p>index works!</p>
+<form [formGroup]="formgroups" (ngSubmit)="onsubmit()">
+    <label>First Name:</label>
+    <input type="text"  fromControlName="FirstName">
+    <div *ngIf="formgroups.controls.FirstName.errors?.required"></div>
+    <label>Last Name :</label>
+    <input type="text" fromcontrolName="LastName">
+    <div *ngIf="formgroups.controls.LastName.errors?.required"></div>
+    <label>Email :</label>
+    <input type="text" fromcontrolName="email">
+    <div *ngIf="formgroups.controls.email.errors?.required"></div>
+
+    <button type="submit" [disabled]=!formgroups.valid>Submit</button>
+</form>
